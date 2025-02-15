@@ -26,4 +26,11 @@ class StringCalculatorTest {
         val sum = stringCalculator.add(stringNumbers)
         assertEquals(9, sum)
     }
+
+    @Test
+    fun testUnknowNumbers() {
+        val stringNumbers = "2,3,4,5"
+        val sum = stringCalculator.add(stringNumbers)
+        assertEquals(14, sum)
+    }
 }
